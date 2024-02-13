@@ -15,7 +15,7 @@ const AnecdoteForm = () => {
     const value = e.target.anecdote.value;
     console.log("input value", value);
     dispatch(createAnecdote(value));
-    dispatch(setNotification(`${value} created!`));
+    dispatch(setNotification(`Anecdote ${value} created!`));
   };
   return (
     <form onSubmit={onCreateAnecdote}>
